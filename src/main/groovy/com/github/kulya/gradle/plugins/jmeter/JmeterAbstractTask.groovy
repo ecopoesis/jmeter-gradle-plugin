@@ -207,7 +207,6 @@ abstract class JmeterAbstractTask extends ConventionTask{
     void setSrcDir(File srcDir) {
         this.srcDir = srcDir
         if (!propertyFileChanged) {
-            System.out.println("Here " + this.getClass().getName());
             setJmeterPropertyFile(new File(srcDir, JmeterPluginConvention.JMETER_DEFAULT_PROPERTY_NAME));
         }
     }
